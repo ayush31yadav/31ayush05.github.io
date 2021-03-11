@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #020100;
+    font-size: 25px;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+em{
+    font-size: 35px;
+    background-color: #ffffff;
+    font-style: normal;
+    color: #643173;
+    text-shadow: 5px 5px 3px rgb(179, 179, 179), 5px 5px 5px rgb(179, 179, 179);
+    transition: ease 1s;
+    border-radius: 5px;
+}
+
+em:hover{
+    background-color: #FF8C42;
+    text-shadow: none;
+    transition: ease 1s;
+    border-radius: 20px;
+}
+
+p.p_intro{
+    overflow: visible;
+}
+
+em.wCrypt_s:hover{
+    background-color: #FFFFFF;
+}
+
+.titleContainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wCrypt{
+    color:#f7f7f7;
+    padding: 2px;
+    font-size: 200px;
+    transition: ease 3s;
+    font-family: 'Akaya Kanadaka', 'Comic Sans MS', cursive;
+    text-shadow: 5px 5px 3px rgb(179, 179, 179), 5px 5px 5px rgb(179, 179, 179);
+}
+
+.wCrypt_s{
+    padding: 1px;
+    font-size: 35px;
+    color: #020100;
+    transition: ease 5s;
+    font-family: 'Akaya Kanadaka', 'Comic Sans MS', cursive;
+    text-shadow: none;
+}
+
+.div_INTRO{
+    display: flex;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#char1:hover, #char3:hover, #char5:hover{
+    transform: translate(10%, 20%);
+    transition: ease 150ms;
+}
+
+#char2:hover, #char4:hover, #char6:hover{
+    transform: translate(10%, -20%);
+    transition: ease 150ms;
+}
+
+#char2:hover, #char3:hover, #char4:hover, #char5:hover, #char6:hover{
+    color: #DB324D;
+    transition: ease 150ms;
+}
+
+#s_w:hover{
+    color:#FF8C42;
+    transition:ease 150ms;
+}
+
+#char1:hover{
+    transform: translate(-10%, 20%);
+    color:#FF8C42;
+    transition:ease 150ms;
+}
