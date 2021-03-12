@@ -11,19 +11,34 @@
 </head>
 <body>
     <div class="titleContainer">
-        <h1 class="wCrypt" id="char1">w</h1>
-        <h1 class="wCrypt" id="char2">C</h1>
-        <h1 class="wCrypt" id="char3">R</h1>
-        <h1 class="wCrypt" id="char4">Y</h1>
-        <h1 class="wCrypt" id="char5">P</h1>
-        <h1 class="wCrypt" id="char6">T</h1>
+        <h1 class="wCrypt" id="char_s">w</h1>
+        <h1 class="wCrypt" id="char_e">C</h1>
+        <h1 class="wCrypt" id="char_o">R</h1>
+        <h1 class="wCrypt" id="char_e">Y</h1>
+        <h1 class="wCrypt" id="char_o">P</h1>
+        <h1 class="wCrypt" id="char_e">T</h1>
     </div>
-    <div class="div_INTRO">
+    <div class="div_center">
         <p id="p_intro">
-            <em class="wCrypt_s" id="s_w">w</em><em class="wCrypt_s" id="char2">C</em><em class="wCrypt_s" id="char2">R</em><em class="wCrypt_s" id="char2">Y</em><em class="wCrypt_s" id="char2">P</em><em class="wCrypt_s" id="char2">T</em>&nbsp 
+            <em class="wCrypt_s" id="s_w">w</em><em class="wCrypt_s" id="char_e">C</em><em class="wCrypt_s" id="char_e">R</em><em class="wCrypt_s" id="char_e">Y</em><em class="wCrypt_s" id="char_e">P</em><em class="wCrypt_s" id="char_e">T</em>&nbsp
             is an algorithm capable of encrypting files. This algorithm is a double password algorithm one of them is a <em>STRING</em> while the other is an <em>INTEGER</em>. From now on we will call the <em>STRING</em> password a <em>KEY</em> while the other one will be called a <em>PIN</em>.
         </p>
-        <h1 class="keyToArr">Key to array</h1>
+    </div>
+    <div class="div_center">
+        <h1 class="head_mid" id="char_s">T</h1>
+        <h1 class="head_mid" id="char_e">h</h1>
+        <h1 class="head_mid" id="char_o">e</h1>&nbsp&nbsp&nbsp
+        <h1 class="head_mid" id="char_s">K</h1>
+        <h1 class="head_mid" id="char_e">E</h1>
+        <h1 class="head_mid" id="char_o">Y</h1>
+    </div>
+    <div class="div_center">
+        <p>
+            The <em>KEY</em> is the string based password. But as we know that a <em>STRING</em> cannot be used for calculation purposes and thus cannot help us in <em>ENCRYPTION</em> in any way, thus we have to somehow convert the string into <em>INTEGER ARRAY</em> and then it will be useful. <br><br>
+            One of the simple ways of doing this is do <em>LOOP</em> over every <em>CHARACTER</em> in the <em>STRING</em> (key) and get its <em>UNICODE INDEX</em>.
+            Arranging all the <em>UNICODE INDEX</em>s will result in a <em>INTEGER</em> based <em>LIST</em> which can now be used for calculation. <br><br>
+            In <em>PYTHON</em> getting the <em>UNICODE INDEX</em> is very easy we can use the <em>FUNCTION</em> <em id="codeSnippet">ord()</em> for achieving this goal. The <em id="codeSnippet">ord()</em> <em>FUNCTION</em> takes in a <em>CHARACTER</em> and returns an <em>INTEGER</em> in the range <em id="codeSnippet">0-65535 (both included)</em>. Now we also know that every <em>BYTE</em> can hold a number from <em id="codeSnippet">0-255 (both included)</em>, thus we have to convert this <em>ARRAY</em> such that we get another <em>ARRAY</em> with the range <em id="codeSnippet">0-255 (both included)</em>.
+        </p>
     </div>
 </body>
 </html>

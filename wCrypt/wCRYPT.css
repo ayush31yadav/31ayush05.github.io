@@ -20,15 +20,24 @@ em{
     border-radius: 5px;
 }
 
+em#codeSnippet{
+    background-color: #e2e2e2;
+    font-family: 'Consolas', sans-serif;
+    border-radius: 5px;
+    color: #020100;
+}
+
+em#codeSnippet:hover{
+    background-color: #cacaca;
+    color: #DB324D;
+    border-radius: 15px;
+}
+
 em:hover{
     background-color: #FF8C42;
     text-shadow: none;
     transition: ease 1s;
     border-radius: 20px;
-}
-
-p.p_intro{
-    overflow: visible;
 }
 
 em.wCrypt_s:hover{
@@ -43,7 +52,7 @@ em.wCrypt_s:hover{
 }
 
 .wCrypt{
-    color:#f7f7f7;
+    color:#020100;
     padding: 2px;
     font-size: 200px;
     transition: ease 3s;
@@ -53,6 +62,8 @@ em.wCrypt_s:hover{
 
 .wCrypt_s{
     padding: 1px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     font-size: 35px;
     color: #020100;
     transition: ease 5s;
@@ -60,26 +71,41 @@ em.wCrypt_s:hover{
     text-shadow: none;
 }
 
-.div_INTRO{
+.head_mid{
+    color:#020100;
+    padding: 2px;
+    font-size: 100px;
+    transition: ease 3s;
+    font-family: 'Akaya Kanadaka', 'Comic Sans MS', cursive;
+    text-shadow: 5px 5px 3px rgb(179, 179, 179), 5px 5px 5px rgb(179, 179, 179);
+}
+
+.div_center{
     display: flex;
     justify-content: center;
     margin-left: 10vw;
     margin-right: 10vw;
 }
 
-#char1:hover, #char3:hover, #char5:hover{
+#char_o:hover{
     transform: translate(10%, 20%);
     transition: ease 150ms;
 }
 
-#char2:hover, #char4:hover, #char6:hover{
+#char_e:hover{
     transform: translate(10%, -20%);
     transition: ease 150ms;
 }
 
-#char2:hover, #char3:hover, #char4:hover, #char5:hover, #char6:hover{
+#char_e:hover, #char_o:hover{
     color: #DB324D;
     transition: ease 150ms;
+}
+
+#char_s:hover{
+    transform: translate(-10%, 20%);
+    color:#FF8C42;
+    transition:ease 150ms;
 }
 
 #s_w:hover{
@@ -87,8 +113,8 @@ em.wCrypt_s:hover{
     transition:ease 150ms;
 }
 
-#char1:hover{
-    transform: translate(-10%, 20%);
-    color:#FF8C42;
-    transition:ease 150ms;
+
+#Title{
+    font-family: 'Akaya Kanadaka', 'Comic Sans MS', cursive;
+    font-size: 55px;
 }
