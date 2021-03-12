@@ -3,7 +3,7 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: #020100;
-    font-size: 25px;
+    font-size: max(1.3vw, 10px);
 }
 
 body{
@@ -11,7 +11,7 @@ body{
 }
 
 em{
-    font-size: 35px;
+    font-size: max(1.83vw, 14px);
     background-color: #ffffff;
     font-style: normal;
     color: #643173;
@@ -54,7 +54,7 @@ em.wCrypt_s:hover{
 .wCrypt{
     color:#020100;
     padding: 2px;
-    font-size: 200px;
+    font-size: max(10vw, 77px);
     transition: ease 3s;
     font-family: 'Akaya Kanadaka', 'Comic Sans MS', cursive;
     text-shadow: 5px 5px 3px rgb(179, 179, 179), 5px 5px 5px rgb(179, 179, 179);
@@ -64,7 +64,7 @@ em.wCrypt_s:hover{
     padding: 1px;
     padding-top: 0px;
     padding-bottom: 0px;
-    font-size: 35px;
+    font-size: max(2vw, 15.3px);
     color: #020100;
     transition: ease 5s;
     font-family: 'Akaya Kanadaka', 'Comic Sans MS', cursive;
@@ -74,7 +74,7 @@ em.wCrypt_s:hover{
 .head_mid{
     color:#020100;
     padding: 2px;
-    font-size: 100px;
+    font-size: max(5vw, 38.5px);
     transition: ease 3s;
     font-family: 'Akaya Kanadaka', 'Comic Sans MS', cursive;
     text-shadow: 5px 5px 3px rgb(179, 179, 179), 5px 5px 5px rgb(179, 179, 179);
@@ -113,8 +113,3 @@ em.wCrypt_s:hover{
     transition:ease 150ms;
 }
 
-
-#Title{
-    font-family: 'Akaya Kanadaka', 'Comic Sans MS', cursive;
-    font-size: 55px;
-}
