@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Calendar</title>
+</head>
+<body>
+    <h3 id="ppm"></h3>
+    <h3 id="pCent"></h3>
+    <script>
+        /* Calculating Since 1625572945778 */
+        let d = new Date();
+        let t = Number(d.getTime());
+        let ppm = ((t - 1625572945778) / (1625572945778 + 3652*24*60*60)) * 1000000;
+        document.getElementById('ppm').innerHTML = String(ppm) + 'ppm from 1000000ppm gone';
+        document.getElementById('pCent').innerHTML = String(ppm/10000) + '% from 100% gone';
+    </script>
+</body>
+</html>
