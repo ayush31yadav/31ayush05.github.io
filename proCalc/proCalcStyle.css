@@ -1,0 +1,174 @@
+/*
+font-family: 'Nunito', sans-serif;  == WEBSITE CONTENT
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #39393A;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    z-index: 0;
+    font-size: 2vh;
+}
+
+b{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+em{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+}
+
+.topHeader{
+    background-color: #2B2B2C;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+    height: fit-content;
+    border-radius: 1rem;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    z-index: 2;
+    box-shadow: 0px 0px 10px #0F0F0F;
+    transition-duration: 500ms;
+}
+
+.topHeader:hover{
+    box-shadow: 0px 0px 50px #0F0F0F;
+    transition-duration: 250ms;
+}
+
+.midMain{
+    background-color: #39393A;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    z-index: 1;
+}
+
+.botFooter{
+    background-color: #2B2B2C;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+    height: fit-content;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    z-index: 2;
+    box-shadow: 0px 0px 10px #0F0F0F;
+    transition-duration: 500ms;
+}
+
+.botFooter:hover{
+    box-shadow: 0px 0px 50px #0F0F0F;
+    transition-duration: 250ms;
+}
+
+.toolBar{
+    background-color: #2B2B2C;
+    color: #FFFFFF;
+    width: 60px;
+    padding: 5px;
+    margin: 10px;
+    margin-right: 3px;
+    min-height: 100%;
+    border-radius: 1rem;
+    z-index: 2;
+    box-shadow: 0px 0px 10px #0F0F0F;
+    transition-duration: 500ms;
+}
+
+.toolBar:hover{
+    box-shadow: 0px 0px 50px #0F0F0F;
+    transition-duration: 250ms;
+}
+
+.commandArea{
+    background-color: #39393A;
+    flex: 4;
+    padding: 5px;
+    margin: 3px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.variablePanel{
+    background-color: #2B2B2C;
+    color: #FFFFFF;
+    flex: 1;
+    padding: 5px;
+    margin: 10px;
+    margin-left: 3px;
+    min-height: 100%;
+    border-radius: 1rem;
+    z-index: 2;
+    box-shadow: 0px 0px 10px #0F0F0F;
+    transition-duration: 500ms;
+}
+
+.variablePanel:hover{
+    box-shadow: 0px 0px 50px #0F0F0F;
+    transition-duration: 250ms;
+}
+
+.inputArea, .outputArea{
+    border-radius: 1rem;
+    padding: 7px;
+    height: fit-content;
+    margin: 3px;
+}
+
+.inputArea{
+    background-color: #2B2B2C;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+    width: 100%;
+    z-index: 4;
+    box-shadow: 0px 0px 10px #0F0F0F;
+    transition-duration: 500ms;
+}
+
+.inputArea:hover{
+    box-shadow: 0px 0px 50px #0F0F0F;
+    transition-duration: 250ms;
+}
+
+.outputArea{
+    border-top-right-radius: 0px;
+    background-color: #323233;
+    color: #FFFFFF;
+    padding-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 7px;
+    width: 95%;
+    z-index: 3;
+    box-shadow: 0px 0px 10px #1D1D1D;
+    transition-duration: 500ms;
+}
+
+.outputArea:hover{
+    box-shadow: 0px 0px 10px #0F0F0F;
+    transition-duration: 250ms;
+}
+
+.logo{
+    font-size: 2.5vh;
+    transition-duration: 250ms;
+}
+
+.logo:hover{
+    font-size: 3vh;
+    transition-duration: 250ms;
+}
