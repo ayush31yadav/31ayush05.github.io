@@ -22,26 +22,35 @@
 </head>
 
 <body>
-    <div class="topHeader"><span class="logo">`sum`<em>pro</em><b>Calc</b></span></div>
-    <div class="midMain">
-        <div class="toolBar">`a^2`</div>
+    <div class="topHeader"><span class="logo"><span id="logoSum">`sum`</span><span id="logoPro">pro</span><span
+                id="logoCalc">Calc</span></span></div>
+    <div class="workspace">
         <div class="commandArea">
-            <div class="inputArea" id="i00">`|[1,0],[0,1]|`</div>
-            <div class="outputArea" id="o00"><em>Derivative = </em> `1`</div>
 
-            <div class="inputArea" id="i00">`|[1,0],[0,1]|`</div>
-            <div class="outputArea" id="o00"><em>Derivative = </em> `1`</div>
+            <div class="qAset">
+                <div class="inputArea" id="iA00i">
+                    <div class="iA_UIelements">
+                        <span class="index" id="ix00i">1</span>
+                        <span class="splitter"></span>
+                        <span class="delBlock" id="del00i">X</span>
+                    </div>
+                    <input class="userInput" type="text" name="v" id="uI00i" placeholder="Enter command here ..." oninput="mathDisp(this.id)">
+                    <span class="inputDisplay" id="iD00i">
+                        `a = b + c`
+                    </span>
+                </div>
+                <div class="outputArea">
+                    Output Displayed here ...
+                </div>
+            </div>
 
-            <div class="inputArea" id="i00">`|[1,0],[0,1]|`</div>
-            <div class="outputArea" id="o00"><em>Derivative = </em> `1`</div>
-
-            <div class="inputArea" id="i00">`|[1,0],[0,1]|`</div>
-            <div class="outputArea" id="o00"><em>Derivative = </em> `1`</div>
         </div>
-        <div class="variablePanel">`A`</div>
+        <div class="variablePanel">
+            <div class="variable" id="v1">
+                `A=[[1,0],[0,1]]`
+            </div>
+        </div>
     </div>
-    <div class="botFooter">Footer</div>
-
 </body>
 <script src="proCalcJS.js"></script>
 

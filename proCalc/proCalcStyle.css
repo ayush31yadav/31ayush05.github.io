@@ -3,172 +3,189 @@ font-family: 'Nunito', sans-serif;  == WEBSITE CONTENT
 */
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: 'Nunito', sans-serif;
+    padding: 0px;
+    margin: 0px;
 }
 
 body{
     background-color: #39393A;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     z-index: 0;
-    font-size: 2vh;
 }
 
-b{
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-}
-
-em{
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
+::-webkit-scrollbar{
+    width: 0px;
 }
 
 .topHeader{
     background-color: #2B2B2C;
-    color: #FFFFFF;
-    width: 100%;
-    padding: 10px;
     height: fit-content;
-    border-radius: 1rem;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    z-index: 2;
-    box-shadow: 0px 0px 10px #0F0F0F;
-    transition-duration: 500ms;
+    width: fit-content;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom-right-radius: 1rem;
+    box-shadow: 0px 0px 10px #1D1D1D;
+    transition-duration: 1000ms;
+    z-index: 3;
 }
-
 .topHeader:hover{
-    box-shadow: 0px 0px 50px #0F0F0F;
+    box-shadow: 0px 0px 50px #1D1D1D;
     transition-duration: 250ms;
 }
 
-.midMain{
-    background-color: #39393A;
-    width: 100%;
-    flex-grow: 1;
+.workspace{
     display: flex;
-    z-index: 1;
-}
-
-.botFooter{
-    background-color: #2B2B2C;
-    color: #FFFFFF;
-    width: 100%;
-    padding: 10px;
-    height: fit-content;
-    border-radius: 1rem;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-    z-index: 2;
-    box-shadow: 0px 0px 10px #0F0F0F;
-    transition-duration: 500ms;
-}
-
-.botFooter:hover{
-    box-shadow: 0px 0px 50px #0F0F0F;
-    transition-duration: 250ms;
-}
-
-.toolBar{
-    background-color: #2B2B2C;
-    color: #FFFFFF;
-    width: 60px;
-    padding: 5px;
-    margin: 10px;
-    margin-right: 3px;
-    min-height: 100%;
-    border-radius: 1rem;
-    z-index: 2;
-    box-shadow: 0px 0px 10px #0F0F0F;
-    transition-duration: 500ms;
-}
-
-.toolBar:hover{
-    box-shadow: 0px 0px 50px #0F0F0F;
-    transition-duration: 250ms;
+    z-index: 0;
 }
 
 .commandArea{
-    background-color: #39393A;
     flex: 4;
-    padding: 5px;
-    margin: 3px;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
+    margin: 10px;
+    z-index: 0;
 }
 
 .variablePanel{
-    background-color: #2B2B2C;
-    color: #FFFFFF;
     flex: 1;
-    padding: 5px;
-    margin: 10px;
-    margin-left: 3px;
-    min-height: 100%;
-    border-radius: 1rem;
-    z-index: 2;
-    box-shadow: 0px 0px 10px #0F0F0F;
-    transition-duration: 500ms;
-}
-
-.variablePanel:hover{
-    box-shadow: 0px 0px 50px #0F0F0F;
-    transition-duration: 250ms;
-}
-
-.inputArea, .outputArea{
-    border-radius: 1rem;
-    padding: 7px;
-    height: fit-content;
-    margin: 3px;
-}
-
-.inputArea{
-    background-color: #2B2B2C;
-    color: #FFFFFF;
-    margin-bottom: 0px;
-    width: 100%;
-    z-index: 4;
-    box-shadow: 0px 0px 10px #0F0F0F;
-    transition-duration: 500ms;
-}
-
-.inputArea:hover{
-    box-shadow: 0px 0px 50px #0F0F0F;
-    transition-duration: 250ms;
-}
-
-.outputArea{
-    border-top-right-radius: 0px;
     background-color: #323233;
-    color: #FFFFFF;
-    padding-left: 30px;
-    margin-top: 0px;
-    margin-bottom: 7px;
-    width: 95%;
-    z-index: 3;
+    padding: 3vh;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    height: fit-content;
+    width: fit-content;
+    max-height: 80vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
     box-shadow: 0px 0px 10px #1D1D1D;
-    transition-duration: 500ms;
+    transition-duration: 1000ms;
+    z-index: 3;
+}
+.variablePanel:hover{
+    box-shadow: 0px 0px 10px #0F0F0F;
+    transition-duration: 250ms;
 }
 
-.outputArea:hover{
+.variable{
+    background-color: #323233;
+    width: fit-content;
+    padding: 7px;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+    border-radius: 0.3rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     box-shadow: 0px 0px 10px #0F0F0F;
+    transition-duration: 1000ms;
+    z-index: 4;
+}
+.variable:hover{
+    box-shadow: 0px 0px 50px #0F0F0F;
     transition-duration: 250ms;
 }
 
 .logo{
     font-size: 2.5vh;
-    transition-duration: 250ms;
+    transition-duration: 500ms;
 }
-
 .logo:hover{
     font-size: 3vh;
     transition-duration: 250ms;
+}
+
+.qAset{
+    margin: 5px;
+}
+
+.iA_UIelements{
+    display: flex;
+}
+
+.index{
+    flex: 1;
+    font-size: 3vh;
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px #0F0F0F;
+}
+
+.splitter{
+    flex: 10;
+}
+
+.delBlock{
+    flex: 1;
+    color: #FF715B;
+    font-size: 3vh;
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px #0F0F0F;
+    transition-duration: 500ms;
+}
+.delBlock:hover{
+    font-size: 4vh;
+    transition-duration: 250ms;
+}
+
+.inputArea{
+    background-color: #2B2B2C;
+    position: sticky;
+    padding: 10px;
+    border-radius: 0.3rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px #1D1D1D;
+    transition-duration: 1000ms;
+    z-index: 4;
+}
+.inputArea:hover{
+    box-shadow: 0px 0px 50px #1D1D1D;
+    transition-duration: 250ms;
+}
+
+.outputArea{
+    background-color: #323233;
+    width: 90%;
+    padding: 10px;
+    border-radius: 0.3rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    box-shadow: 0px 0px 10px #1D1D1D;
+    transition-duration: 1000ms;
+    z-index: 3;
+}
+.outputArea:hover{
+    box-shadow: 0px 0px 10px #0F0F0F;
+    transition-duration: 250ms;
+}
+
+.inputDisplay{
+    font-size: 2vh;
+    transition-duration: 500ms;
+}
+.inputDisplay:hover{
+    font-size: 3vh;
+    transition-duration: 250ms;
+}
+
+.userInput{
+    background-color: #2B2B2C;
+    color: #8F8F8F;
+    border: none;
+    outline: none;
+}
+
+#logoPro{
+    font-family: 'Nunito', sans-serif;
+    color: #33D7CC;
+}
+
+#logoCalc{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color: #FF715B;
 }
