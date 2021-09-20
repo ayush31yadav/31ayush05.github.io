@@ -1,57 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="proCalcStyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-    <script>
-        MathJax = {
-            loader: { load: ['input/asciimath', 'output/chtml'] }
-        }
-    </script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script type="text/javascript" id="MathJax-script" async
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
-        </script>
     <title>proCalc</title>
 </head>
-
 <body>
-    <div class="topHeader"><span class="logo"><span id="logoSum">`sum`</span><span id="logoPro">pro</span><span
-                id="logoCalc">Calc</span></span></div>
-    <div class="workspace">
-        <div class="commandArea">
-
-            <div class="qAset">
-                <div class="inputArea" id="iA00i">
-                    <div class="iA_UIelements">
-                        <span class="index" id="ix00i">1</span>
-                        <span class="splitter"></span>
-                        <span class="delBlock" id="del00i">X</span>
-                    </div>
-                    <input class="userInput" type="text" name="v" id="uI00i" placeholder="Enter command here ..." oninput="mathDisp(this.id)">
-                    <span class="inputDisplay" id="iD00i">
-                        `a = b + c`
-                    </span>
-                </div>
-                <div class="outputArea">
-                    Output Displayed here ...
-                </div>
-            </div>
-
-        </div>
-        <div class="variablePanel">
-            <div class="variable" id="v1">
-                `A=[[1,0],[0,1]]`
-            </div>
-        </div>
-    </div>
+    
 </body>
-<script src="proCalcJS.js"></script>
-
 </html>
