@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Monofett&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="code.js"></script>
+    <title>CrapCulator</title>
+</head>
+<body>
+    <div id="topPanel"></div>
+    <div id="midPanel">
+        <div id="leftPanel"></div>
+        <div id="centerPanel">
+            <div id="title">
+                <em id="crap">Crap</em>Culator
+            </div>
+            <div id="display"></div>
+            <div id="funButtons">
+                <div id="blank"></div>
+                <div id="back" onclick="lol()">Backspace😈</div>
+            </div>
+            <div id="inputArea">
+                <div class="row">
+                    <div class="button" onclick="inpClick(1)" id="b1">7</div>
+                    <div class="button" onclick="inpClick(2)" id="b2">8</div>
+                    <div class="button" onclick="inpClick(3)" id="b3">9</div>
+                    <div class="button" onclick="inpClick(4)" id="b4">/</div>
+                </div>
+                <div class="row">
+                    <div class="button" onclick="inpClick(5)" id="b5">4</div>
+                    <div class="button" onclick="inpClick(6)" id="b6">5</div>
+                    <div class="button" onclick="inpClick(7)" id="b7">6</div>
+                    <div class="button" onclick="inpClick(8)" id="b8">*</div>
+                </div>
+                <div class="row">
+                    <div class="button" onclick="inpClick(9)" id="b9">1</div>
+                    <div class="button" onclick="inpClick(10)" id="b10">2</div>
+                    <div class="button" onclick="inpClick(11)" id="b11">3</div>
+                    <div class="button" onclick="inpClick(12)" id="b12">-</div>
+                </div>
+                <div class="row">
+                    <div class="button" onclick="inpClick(13)" id="b13">0</div>
+                    <div class="button" onclick="inpClick(14)" id="b14">.</div>
+                    <div class="button" onclick="inpClick(15)" id="b15">=</div>
+                    <div class="button" onclick="inpClick(16)" id="b16">+</div>
+                </div>
+            </div>
+        </div>
+        <div id="rightPanel"></div>
+    </div>
+    <div id="botPanel"></div>
+</body>
+</html>

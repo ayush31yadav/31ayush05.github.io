@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+#topPanel, #botPanel {
+    flex: 1;
+}
+
+#midPanel {
+    flex: 2;
+    display: flex;
+}
+
+#leftPanel, #rightPanel{
+    flex: 1;
+}
+
+#centerPanel {
+    flex: 2;
+    max-width: 300px;
+    min-width: 100px;
+    max-height: 480px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    display: flex;
+    font-size: 150%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    color: #1B998B;
+}
+
+#crap {
+    font-style: normal;
+    color: #FB3640;
+}
+
+#display {
+    font-family: 'VT323', sans-serif;
+    border-radius: 1rem;
+    padding: 7px;
+    flex: 2;
+    border-radius: 10px;
+    background: #fbfbfb;
+}
+
+#funButtons {
+    flex: 1;
+    display: flex;
+}
+
+#blank {
+    flex: 2;
+}
+
+#back {
+    font-family: 'VT323', sans-serif;
+    font-size: 150%;
+    border-radius: 0.3rem;
+    margin: 0.2rem;
+    flex: 3;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #dbdbdb;
+    transition: 0.6s;
+}
+#back:hover {
+    background-color: #FB3640;
+    transition: 0.1s;
+    transform: translate(20vw, 0rem);
+}
+
+#inputArea {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+}
+
+.button {
+    font-family: 'VT323', sans-serif;
+    font-size: 150%;
+    border-radius: 0.3rem;
+    flex: 1;
+    background-color: #dbdbdb;
+    margin: 0.2rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: 0.5s;
+}
+.button:hover {
+    background-color: #FB3640;
+    transition: 0.1s;
+    transform: translate(0.2rem, 0.2rem);
+}
