@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Agbalumo', sans-serif;
+    background: #3F4045;
 }
 
 body {
@@ -55,7 +56,9 @@ body {
     padding: 7px;
     flex: 2;
     border-radius: 10px;
-    background: #fbfbfb;
+    background: #575960;
+    box-shadow:  3px 3px 6px #36363b,
+                -3px -3px 6px #484a4f;
 }
 
 #funButtons {
@@ -76,11 +79,13 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
-    background-color: #dbdbdb;
+    background-color: #575960;
     transition: 0.6s;
+    box-shadow:  3px 3px 6px #36363b,
+                -3px -3px 6px #484a4f;
 }
 #back:hover {
-    background-color: #FB3640;
+    background-color: #4E4F56;
     transition: 0.1s;
     transform: translate(20vw, 0rem);
 }
@@ -101,7 +106,9 @@ body {
     font-size: 150%;
     border-radius: 0.3rem;
     flex: 1;
-    background-color: #dbdbdb;
+    background-color: #575960;
+    box-shadow:  3px 3px 6px #36363b,
+                -3px -3px 6px #484a4f;
     margin: 0.2rem;
     justify-content: center;
     align-items: center;
@@ -109,7 +116,7 @@ body {
     transition: 0.5s;
 }
 .button:hover {
-    background-color: #FB3640;
+    background-color: #4E4F56;
     transition: 0.1s;
     transform: translate(0.2rem, 0.2rem);
 }
